@@ -10,6 +10,7 @@ Método para consultar el trackid de un envío de boleta electrónica
 <h3>Proceso 1: Crear un objeto Json</h3>
 <br>Este proceso Consiste en generar un array de datos como objeto json, de acuerdo al siguiente ejemplo
 <br>
+<pre>
 <code>
   $arregloJson = array(
 "TOKEN" => "tokendeaccesoapi",
@@ -25,3 +26,4 @@ Método para consultar el trackid de un envío de boleta electrónica
 "PrivKey"=>"nnn"
 );
 </code>
+</pre>
