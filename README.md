@@ -37,21 +37,6 @@ $arregloJson = array(
 <code>
 <?php
 #
-# url de destino para enviar el json
-$url="https://www.factronica.cl/api/factronica_consultarenviodte/index.php";
-#
-# puerto 443=https 80=http
-$puerto=443;
-#
-# llamar a la función para enviar el json
-$retorno=JsonEnviar($arregloJson,$url,$puerto);
-?>
-</code>
-</pre>
-<br>
-<pre>
-<code>
-<?php
 function JsonEnviar($arregloJson,$url,$puerto){
     #
     $payload = json_encode($arregloJson);
@@ -68,8 +53,16 @@ function JsonEnviar($arregloJson,$url,$puerto){
     #
     return $json_response; 
 }
+#
+# url de destino para enviar el json
+$url="https://www.factronica.cl/api/factronica_consultarenviodte/index.php";
+#
+# puerto 443=https 80=http
+$puerto=443;
+#
+# llamar a la función para enviar el json
+$retorno=JsonEnviar($arregloJson,$url,$puerto);
 ?>
-
 </code>
 </pre>
-.
+<br>
