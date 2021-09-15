@@ -34,6 +34,7 @@ $arregloJson = array(
 <br>Este proceso Consiste en enviar el objeto json a la api del servidor de boletas, de acuerdo al siguiente ejemplo.
 <br>
 <pre>
+<code>
 <?php
 #
 function JsonEnviar($arregloJson,$url,$puerto){
@@ -62,5 +63,6 @@ $puerto=443;
 # llamar a la función para enviar el json
 $retorno=JsonEnviar($arregloJson,$url,$puerto);
 ?>
+</code>
 </pre>
 
