@@ -10,7 +10,7 @@ Método para consultar el trackid de un envío de boleta electrónica
 <h3>Proceso 1: Crear un objeto Json</h3>
 <br>Este proceso Consiste en generar un array de datos como objeto json, de acuerdo al siguiente ejemplo
 <br>
-```php
+
 <?php
 $arregloJson = array(
 "TOKEN" => "tokendeaccesoapi",
@@ -26,13 +26,13 @@ $arregloJson = array(
 "PrivKey"=>"nnn"
 );
 ?>
-```
+
 <br>
 <hr>
 <h3>Proceso 2: Enviar el objeto json a la Api de Boletas</h3>
 <br>Este proceso Consiste en enviar el objeto json a la api del servidor de boletas, de acuerdo al siguiente ejemplo.
 <br> 
-```php
+
 <?php
 #
 function JsonEnviar($arregloJson,$url,$puerto){
@@ -61,5 +61,5 @@ $puerto=443;
 # llamar a la función para enviar el json
 $retorno=JsonEnviar($arregloJson,$url,$puerto);
 ?>
-```
+
 
