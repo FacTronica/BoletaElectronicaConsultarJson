@@ -11,4 +11,17 @@ Método para consultar el trackid de un envío de boleta electrónica
 <br>Este proceso Consiste en generar un array de datos como objeto json, de acuerdo al siguiente ejemplo
 <br>
 <code>
+  $arregloJson = array(
+"TOKEN" => "tokendeaccesoapi",
+"ACCION" => "CONSULTARTRACKID",
+"RutCompania"=>"11111111",
+"DvCompania"=>"1",
+"TrackId"=>"332233444",
+"RESPUESTASII"=>"FOLIO758_TIPO39_RUT111111111_RESPUESTAENVIODTE.xml",
+"BUZONRESPUESTAS"=>"temp",
+"Modulus"=>"nnn",
+"Exponent"=>"nnn",
+"X509Certificate"=>"nnn",
+"PrivKey"=>"nnn"
+);
 </code>
