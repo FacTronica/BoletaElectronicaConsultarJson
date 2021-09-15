@@ -68,5 +68,7 @@ function JsonEnviar($arregloJson,$url,$puerto){
     return $json_response; 
 }
 ?>
+
 </code>
 </pre>
+.
