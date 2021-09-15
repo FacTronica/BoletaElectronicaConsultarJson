@@ -42,4 +42,4 @@ $arregloJson = array(
 <br>El TrackId puede tener 3 estado; Aceptado, Rechazado o Aceptado con Reparos.
 <br>
 <b>EJEMPLO:</b>
-
+https://github.com/FacTronica/BoletaElectronicaConsultarJson/blob/main/envia_json_consultartrackid.php
