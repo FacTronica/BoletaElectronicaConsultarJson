@@ -34,13 +34,31 @@ $arregloJson = array(
 <h3>Proceso 2: Enviar el objeto json a la Api de Boletas</h3>
 <br>Este proceso Consiste en enviar el objeto json a la api del servidor de boletas, de acuerdo al siguiente ejemplo.
 <br>
-<pre>
-<code>
-<?php
 #
-sss
-sss
-?>
-</code>
-</pre>
-<br>
+function JsonEnviar($arregloJson,$url,$puerto){
+    #
+    $payload = json_encode($arregloJson);
+    $curl = curl_init($url);
+    curl_setopt($curl, CURLOPT_HEADER, false);
+    curl_setopt($curl, CURLOPT_PORT,$puerto);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_HTTPHEADER,array("Content-type: application/json"));
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_POSTFIELDS,$payload);
+    $json_response = curl_exec($curl);
+    $status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+    curl_close($curl);
+    #
+    return $json_response; 
+}
+#
+# url de destino para enviar el json
+$url="https://www.factronica.cl/api/factronica_consultarenviodte/index.php";
+#
+# puerto 443=https 80=http
+$puerto=443;
+#
+# llamar a la función para enviar el json
+$retorno=JsonEnviar($arregloJson,$url,$puerto);
+
+
