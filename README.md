@@ -11,6 +11,7 @@ Método para consultar el trackid de un envío de boleta electrónica
 <br>Este proceso Consiste en generar un array de datos como objeto json, de acuerdo al siguiente ejemplo
 <br>
 ```php
+<?php
 $arregloJson = array(
 "TOKEN" => "tokendeaccesoapi",
 "ACCION" => "CONSULTARTRACKID",
@@ -60,4 +61,5 @@ $puerto=443;
 # llamar a la función para enviar el json
 $retorno=JsonEnviar($arregloJson,$url,$puerto);
 ?>
+```
 
