@@ -26,6 +26,7 @@ $arregloJson = array(
 "X509Certificate"=>"nnn",
 "PrivKey"=>"nnn"
 );
+?>
 </code>
 </pre>
 <br>
