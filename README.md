@@ -34,6 +34,7 @@ $arregloJson = array(
 <h3>Proceso 2: Enviar el objeto json a la Api de Boletas</h3>
 <br>Este proceso Consiste en enviar el objeto json a la api del servidor de boletas, de acuerdo al siguiente ejemplo.
 <br>
+<pre>
 <code>
 <?php
 #
