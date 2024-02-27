@@ -28,6 +28,18 @@ $arregloJson = array(
 </code>
 </pre>
 <br>
+
+<br>
+<pre>
+<code>
+{"rut_emisor":"77251719-K","rut_envia":"15394707-4","trackid":"11941097063","fecha_recepcion":"19/02/2024 16:59:28","estado":"EPR","estadistica":[{"tipo":39,"informados":1,"aceptados":0,"rechazados":1,"reparos":0}],"detalle_rep_rech":[{"tipo":39,"folio":1146,"estado":"RCH","descripcion":"DTE Rechazado","error":[{"seccion":"DTE","linea":0,"nivel":3,"codigo":101,"descripcion":"Folio para este Tipo de documento ya fue recibido en el SII","detalle":null}]}]}
+</code>
+</pre>
+<br>
+
+
+
+
 <hr>
 <h3>Proceso 2: Enviar el objeto json a la Api de Boletas</h3>
 <br>Este proceso Consiste en enviar el objeto json a la api del servidor de boletas.
